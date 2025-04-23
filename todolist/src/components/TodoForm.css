@@ -1,0 +1,19 @@
+:root {
+    --bcgr-input: #fff5e1;
+    --border-input: 2px solid #e07a5f;
+    --box-shadow-input: 0 0 8px rgba(244, 162, 97, 0.5);
+}
+input {
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: var(--border-inpfocus);
+    box-shadow: var(--box-shadow-input);
+  }
+  @media (max-width: 767px) {
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+  }
