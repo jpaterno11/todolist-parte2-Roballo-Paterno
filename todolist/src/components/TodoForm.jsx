@@ -9,12 +9,7 @@ function TodoForm() {
                 <label for="tarea">Ingrese la tarea que desea incluir: </label>
                 <input type="text" name="tarea" id="tarea"/>
                 <button id="addTaskBoton">Agregar</button>
-                <div id="tareas">
-                    <h2>Tareas no comenzadas:</h2>
-                    <ul id="tareasDisplay">
                         <TodoItem/>
-                    </ul>
-                </div>
             </div>
         </> 
     );

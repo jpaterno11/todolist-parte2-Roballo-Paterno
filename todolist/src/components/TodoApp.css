@@ -1,0 +1,126 @@
+:root{
+    --text-color: #333;
+    --bcgr-color: linear-gradient(135deg, #ffd6a5, #ff9b85);
+}
+* {
+    transition: background-color 0.5s ease-in-out, 
+                color 0.5s ease-in-out, 
+                box-shadow 0.5s ease-in-out, 
+                border 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+
+  
+  @keyframes stretchBounce {
+    0% {
+        transform: scaleX(0.6);
+        opacity: 0;
+    }
+    60% {
+        transform: scaleX(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+  }
+  
+html, body {
+    height: 100%;
+  }
+  body {
+    margin-top: 6%;
+    font-family: "Comic Sans MS", sans-serif;
+    background: var(--bcgr-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    color: var(--text-color);
+  }
+.sectorTareas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .sectorTareas > div {
+    flex: 1 1 30%;
+    background: var(--bcgr-form);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-form);
+    text-align: center;
+    min-width: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .sectorTareas {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+  
+    .sectorTareas > div {
+        flex: 1 1 33%;
+        margin-bottom: 20px;
+        min-width: 300px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .sectorTareas > div {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .sectorTareas {
+        flex-direction: column;
+        gap: 10px;
+        overflow-x: auto;
+    }
+    .sectorTareas > div {
+        flex: 1 1 100%;
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .sectorTareas > div {
+        padding: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .sectorTareas {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sectorTareas > div {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    ul {
+        padding: 5px;
+        border-radius: 10px;
+    }
+  }
+  

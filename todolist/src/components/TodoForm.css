@@ -2,6 +2,10 @@
     --bcgr-input: #fff5e1;
     --border-input: 2px solid #e07a5f;
     --box-shadow-input: 0 0 8px rgba(244, 162, 97, 0.5);
+    --bcgr-form: #ffeedb;
+        
+    --border-form: 1px solid #e0a96d;
+    --border-inpfocus: #f4a261;
 }
 input {
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;

@@ -1,12 +1,11 @@
 import React from 'react';
-import './TodoList.css'
+import './TodoApp.css'
 import TodoForm from './TodoForm';
-import TodoItem from './TodoItem'
-import FilterButtons from './FilterButtons'
+import TodoList from './TodoList'
 function TodoApp() {
     return (
         <>
-        <h1 className="animate__animated animate__rotateInDownLeft">TO DO LIST</h1>
+        <h1>TO DO LIST</h1>
         <div className="sectorTareas">
             <TodoForm/>
             <TodoList/>

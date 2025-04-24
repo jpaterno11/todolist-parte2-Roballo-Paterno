@@ -1,0 +1,25 @@
+:root{
+  --bcgr-button: linear-gradient(135deg, #e07a5f, #c94c4c);
+    --hover: linear-gradient(135deg, #f4a261, #e07a5f);
+    --box-shadow-form: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+ul{
+    list-style-type: none;
+    border: solid;
+    border-radius: 15%;
+    padding: 10px;
+    box-shadow: var(--box-shadow-form);
+  }
+  
+ 
+  ul li {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 0.5s forwards ease-in-out;
+    transition: all 0.3s;
+  }
+  
+  ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }

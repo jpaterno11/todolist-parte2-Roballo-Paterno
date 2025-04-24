@@ -1,4 +1,5 @@
 import React from 'react';
+import './FilterButtons.css'
 function Botones({ estado }) {
     if (estado == "Incompleto"){
         return (
